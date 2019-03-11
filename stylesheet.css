@@ -1,0 +1,379 @@
+.moon{
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: white;
+	opacity: .6;
+	left: 1350px;
+}
+.helper{
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: #8a8a5ee3;
+	opacity: .8;
+	
+}
+.body{
+	position: absolute;
+	height: 150px;
+	top: 130px;
+	width: 500px;
+	background-color: #2c4b80;
+	left: 90px;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 40%;
+}
+
+.extra{
+	position: absolute;
+	height:100px;
+	width: 250px;
+	background-color: black;
+	left: 380px;
+	top: 20px;
+	transform: rotate(70deg);
+}
+
+.extra1{
+	position: absolute;
+	height:120px;
+	width: 270px;
+	background-color: black;
+	left: -120px;
+	top: 20px;
+	transform: rotate(-60deg);
+}
+
+.low_body{
+	position: absolute;
+	height: 150px;
+	width: 700px;
+	top: 280px;
+	background-color: #2c4b80;
+	border-top-right-radius: 20%;
+	border-top-left-radius: 20%;
+	border-bottom-left-radius: 5%;
+	border-bottom-right-radius: 7%;
+}
+
+.headlight{
+	position: absolute;
+	height: 50px;
+	width: 80px;
+	border-top-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	background-color: yellow;
+	top: 6px;
+}
+
+.wheel1{
+	position: absolute;
+	height: 140px;
+	width: 140px;
+	border-radius: 50%;
+	background-color: black;
+	top: 45px;
+	left: 80px;
+}
+
+.wheel2{
+	position: absolute;
+	height: 140px;
+	width: 140px;
+	border-radius: 50%;
+	background-color: black;
+	top: 45px;
+	left: 450px;
+}
+.wheel1_inside{
+	position: absolute;
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	background-color: white;
+	top: 10px;
+	left: 10px;
+
+} 
+.shadow{
+	position: absolute;
+	width: 590px;
+	height: 30px;
+	border-radius: 50%;
+	top: 165px;
+	left: 10px;
+	background-color: grey;
+
+}
+.stick1{    
+ position: absolute;
+     height: 120px;   
+       width: 4px;
+background-color: black; 
+    left: 45%; 
+    } 
+
+    .stick2{    
+ position: absolute;
+     height: 120px;   
+       width: 4px;
+background-color: black; 
+    left: 48.5%;
+    transform: rotate(90deg); 
+    }
+@keyframes rotate{
+	0%{ transform: rotate(0deg) }
+	50%{ transform: rotate(-180deg) }
+	97%{ transform: rotate(-380deg) }
+}
+
+.wheel1_inside { animation: rotate 0.5s 3 }
+.wheel2_inside { animation: rotate 0.5s 4	 }
+
+
+
+
+
+
+
+
+    .wheel2_inside{ 
+        position:absolute;
+             height: 120px;
+                  width: 120px;
+                       border-radius: 50%;
+	background-color: white; 	
+    top: 10px;
+         left: 10px;
+	
+}
+
+
+
+
+.window1{
+	height: 140px;
+	width: 420px;
+	background-color: #9e9ec4;
+	position: absolute;
+	left: 60px;
+	top: 30px;
+}
+.edit{
+	height: 150px;
+	width: 20px;
+	top: -15px;
+	left: 15px;
+	position: absolute;
+	background-color: #2c4b80;
+	transform: rotate(30deg);
+}
+.edit_more{
+	height: 140px;
+	width: 25px;
+	top: -15px;
+	left: 383px;
+	position: absolute;
+	background-color:#2c4b80;
+	transform: rotate(-20deg);
+}
+
+.edit123{
+	height: 140px;
+	width: 20px;
+	top: -15px;
+	left: 170px;
+	position: absolute;
+	background-color: #2c4b80;
+}
+.edit12{
+	height: 140px;
+	width: 20px;
+	top: -15px;
+	left: 340px;
+	position: absolute;
+	background-color: #2c4b80;
+}
+
+
+.door_handle_l{
+	height: 13px;
+	width: 30px;
+	position: absolute;
+	background-color: black;
+	top: 290px;
+	left: 290px;
+}
+.door_handle_r{
+	height: 13px;
+	width: 30px;
+	position: absolute;
+	background-color: black;
+	top: 290px;
+	left: 460px;
+}
+.exhaust{
+	height: 15px;
+	width: 20px;
+	position: absolute;
+	background-color: grey;
+	top: 120px;
+	left: 700px;
+}
+#smoke span { 
+  display: block;
+	position: absolute;
+	bottom: -35px; left: 50%; margin-left:-20px;
+	height: 0px; width: 0px;
+	border: 35px solid grey;
+	border-radius: 35px;
+	bottom: 350px;
+	left: 10px;
+	opacity: 0;
+	transform: scale(0.2);
+	top: -25px;
+
+}
+
+@keyframes smokeL {
+	-30%   { transform: scale(0.4) translate(0, 0) }
+	10%  { opacity: .85; transform: scale(0.4) translate(0, -5px) }
+
+	100% { opacity: 0; transform: scale(1) translate(40px, -130px) }
+}
+
+@keyframes smokeR {
+	-30%   { transform: scale(0.4) translate(0, 0) }
+	10%  { opacity: 0.85; transform: scale(0.4) translate(0, -5px) }
+	100% { opacity: 0; transform: scale(1) translate(80px, -130px) }
+}
+
+#smoke .s0 { animation: smokeL 5s 0s infinite }
+#smoke .s1 { animation: smokeR 5s 0.5s infinite }
+#smoke .s2 { animation: smokeL 5s 1s infinite }
+#smoke .s3 { animation: smokeR 5s 1.5s infinite }
+#smoke .s4 { animation: smokeL 5s 2s infinite }
+#smoke .s5 { animation: smokeR 5s 2.5s infinite }
+#smoke .s6 { animation: smokeL 5s 3s infinite }
+#smoke .s7 { animation: smokeR 5s 3.5s infinite }
+#smoke .s8 { animation: smokeL 5s 4s infinite }
+#smoke .s9 { animation: smokeR 5s 4.5s infinite }
+
+#smoke1 span { 
+  display: block;
+	position: absolute;
+	
+	left: 40%; 
+	margin-left:-20px;
+	height: 0px; width: 0px;
+	border: 35px solid grey;
+	border-radius: 35px;
+	bottom: 350px;
+	top: 5px;
+	left: 10px;
+	opacity: 0;
+	transform: scale(0.2);
+	
+
+}
+#smoke2 span { 
+  display: block;
+	position: absolute;
+	
+	left: 40%; 
+	margin-left:-20px;
+	height: 0px; width: 0px;
+	border: 35px solid grey;
+	border-radius: 35px;
+	bottom: 350px;
+	top: 5px;
+	left: 40px;
+	opacity: 0;
+	transform: scale(0.2);
+	
+
+}
+@keyframes smoke1L {
+	0%   { transform: scale(0.4) translate(0, 0) }
+	10%  { opacity: .85; transform: scale(0.4) translate(0, -5px) }
+
+	100% { opacity: 0; transform: scale(1) translate(-30px, -170px) }
+}
+
+@keyframes smoke1R {
+	0%   { transform: scale(0.4) translate(0, 0) }
+	10%  { opacity: 0.85; transform: scale(0.4) translate(0, -5px) }
+	100% { opacity: 0; transform: scale(1) translate(30px, -170px) }
+}
+
+
+
+#smoke1 .ss0 { animation: smoke1L 5s 1.3s infinite }
+#smoke1 .ss1 { animation: smoke1R 5s 1.8s infinite }
+#smoke1 .ss2 { animation: smoke1L 5s 2.3s infinite }
+#smoke1 .ss3 { animation: smoke1R 5s 3.8s infinite }
+#smoke1 .ss4 { animation: smoke1L 5s 4.3s infinite }
+#smoke1 .ss5 { animation: smoke1R 5s 4.8s infinite }
+#smoke1 .ss6 { animation: smoke1L 5s 5.3s infinite }
+#smoke1 .ss7 { animation: smoke1R 5s 5.8s infinite }
+#smoke1 .ss8 { animation: smoke1L 5s 6.3s infinite }
+#smoke1 .ss9 { animation: smoke1R 5s 6.8s infinite }
+
+#smoke2 .ss0 { animation: smoke1L 5s 1.5s infinite }
+#smoke2 .ss1 { animation: smoke1R 5s 2s infinite }
+#smoke2 .ss2 { animation: smoke1L 5s 2.5s infinite }
+#smoke2 .ss3 { animation: smoke1R 5s 3s infinite }
+#smoke2 .ss4 { animation: smoke1L 5s 3.5s infinite }
+#smoke2 .ss5 { animation: smoke1R 5s 4s infinite }
+#smoke2 .ss6 { animation: smoke1L 5s 4.5s infinite }
+#smoke2 .ss7 { animation: smoke1R 5s 5s infinite }
+#smoke1 .ss8 { animation: smoke1L 5s 5.5s infinite }
+#smoke2 .ss9 { animation: smoke1R 5s 6s infinite }
+
+.car{
+	position: absolute;
+	left: 55px;
+	top: 300px;
+}
+
+@keyframes run{
+	0%{transform: translate(1500px,0px)}
+	70%{transform: translate(0px,0px) rotate(0deg)}
+	75%{transform: translate(0px,0px) rotate(-10deg)}
+	99%{opacity: 1 ; transform: translate(0px,0px) rotate(0deg) }
+	100%{opacity: 1;}
+}
+.car { animation: run 2s 0s 1}
+
+.post{
+	position: absolute;
+	background-color: #391818;
+	left: 0%;
+	height: 99%;
+	width: 49px;
+}
+
+.bonet{
+	display: block;
+	position: absolute;
+	height: 230px; 
+	width: 8px;
+	left: 100px;
+	top: -120px;
+	border-radius: 50%;	
+	/*left: 500px;*/
+	transform: rotate(300deg);
+	background-color: #2c4b80;
+	opacity: 1;
+	}
+@keyframes accident{
+	0%{ opacity: 0 ;transform: rotate(270deg);}
+	69%{ opacity: 0 ;transform: rotate(270deg) }
+	75%{ opacity: 1 }
+	90%{ opacity: 1 ;transform: rotate(300deg)}
+	
+}
+.bonet{ animation: accident 2s 0s 1 }
